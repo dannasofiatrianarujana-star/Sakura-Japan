@@ -40,45 +40,67 @@
 
         <section class="cards places">
 
-            <div class="card place-card">
+            <div class="card place-card" data-place="tokio">
                 <span>🌃</span>
                 <h3>Tokio</h3>
                 <p>
                     Una ciudad llena de tecnología, luces,
                     cultura y entretenimiento.
                 </p>
+                <button class="place-button">📸 Ver fotos</button>
             </div>
 
-            <div class="card place-card">
+            <div class="card place-card" data-place="kioto">
                 <span>⛩️</span>
                 <h3>Kioto</h3>
                 <p>
                     Famosa por sus templos, jardines y
                     arquitectura tradicional.
                 </p>
+                <button class="place-button">📸 Ver fotos</button>
             </div>
 
-            <div class="card place-card">
+            <div class="card place-card" data-place="fuji">
                 <span>🗻</span>
                 <h3>Monte Fuji</h3>
                 <p>
                     Uno de los paisajes naturales más
                     representativos de Japón.
                 </p>
+                <button class="place-button">📸 Ver fotos</button>
             </div>
 
-            <div class="card place-card">
+            <div class="card place-card" data-place="osaka">
                 <span>🏯</span>
                 <h3>Osaka</h3>
                 <p>
                     Una ciudad conocida por su gastronomía,
                     castillos y ambiente urbano.
                 </p>
+                <button class="place-button">📸 Ver fotos</button>
             </div>
 
         </section>
 
     </main>
+
+    <!-- VENTANA DE FOTOS -->
+
+    <div id="photoModal" class="photo-modal">
+
+        <div class="photo-content">
+
+            <button id="closeModal" class="close-modal">✕</button>
+
+            <h2 id="modalTitle"></h2>
+
+            <p id="modalDescription"></p>
+
+            <div id="photoGallery" class="photo-gallery"></div>
+
+        </div>
+
+    </div>
 
     <footer>
         <p>🌸 Sakura Japan</p>
