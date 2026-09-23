@@ -1,0 +1,264 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background: #fff8f8;
+    color: #292323;
+    transition: 0.3s;
+}
+
+/* BARRA DE NAVEGACIÓN */
+
+.navbar {
+    width: 100%;
+    padding: 18px 8%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: #ffffff;
+    box-shadow: 0 2px 15px rgba(0, 0, 0, 0.08);
+    position: sticky;
+    top: 0;
+    z-index: 10;
+}
+
+.navbar h1 {
+    color: #c73866;
+    font-size: 25px;
+}
+
+.menu {
+    display: flex;
+    gap: 30px;
+}
+
+.menu a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.menu a:hover {
+    color: #c73866;
+}
+
+#modoBtn {
+    border: none;
+    background: #f8d7df;
+    padding: 10px 13px;
+    border-radius: 50%;
+    cursor: pointer;
+    font-size: 17px;
+}
+
+/* INICIO */
+
+.hero {
+    min-height: 75vh;
+    display: flex;
+    align-items: center;
+    padding: 60px 10%;
+    background:
+        linear-gradient(
+            rgba(60, 20, 30, 0.45),
+            rgba(60, 20, 30, 0.45)
+        ),
+        url("https://images.unsplash.com/photo-1528360983277-13d401cdc186?auto=format&fit=crop&w=1600&q=80");
+
+    background-size: cover;
+    background-position: center;
+}
+
+.hero-text {
+    max-width: 650px;
+    color: white;
+}
+
+.small-title {
+    letter-spacing: 4px;
+    font-size: 14px;
+    margin-bottom: 15px;
+    color: #c73866;
+    font-weight: bold;
+}
+
+.hero .small-title {
+    color: #ffd8e3;
+}
+
+.hero h2 {
+    font-size: 55px;
+    margin-bottom: 20px;
+}
+
+.hero p {
+    font-size: 18px;
+    line-height: 1.7;
+}
+
+/* BOTONES */
+
+.main-button {
+    margin-top: 25px;
+    padding: 14px 25px;
+    border: none;
+    border-radius: 30px;
+    background: #d94f78;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.main-button:hover {
+    transform: translateY(-3px);
+    background: #b8325d;
+}
+
+#dato {
+    margin-top: 20px;
+    font-weight: bold;
+}
+
+/* SECCIONES */
+
+.intro {
+    padding: 70px 10%;
+    text-align: center;
+}
+
+.intro h2,
+.page-title h2 {
+    font-size: 38px;
+    margin-bottom: 15px;
+}
+
+.intro > p {
+    max-width: 700px;
+    margin: auto;
+    line-height: 1.7;
+}
+
+/* TÍTULOS DE PÁGINAS */
+
+.page-title {
+    text-align: center;
+    padding: 80px 20px 50px;
+}
+
+.page-title > p:last-child {
+    max-width: 650px;
+    margin: auto;
+    line-height: 1.7;
+}
+
+/* TARJETAS */
+
+.cards {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+    margin-top: 40px;
+}
+
+.card {
+    background: white;
+    padding: 35px 25px;
+    border-radius: 20px;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.08);
+    transition: 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 15px 30px rgba(199, 56, 102, 0.18);
+}
+
+.card span {
+    font-size: 42px;
+}
+
+.card h3 {
+    margin: 15px 0;
+    color: #c73866;
+    font-size: 22px;
+}
+
+.card p {
+    line-height: 1.6;
+    color: #555;
+}
+
+.cultural-cards,
+.places {
+    max-width: 1100px;
+    margin: 20px auto 80px;
+    padding: 0 20px;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+/* FOOTER */
+
+footer {
+    text-align: center;
+    padding: 25px;
+    background: #2c2023;
+    color: white;
+}
+
+/* MODO OSCURO */
+
+body.dark {
+    background: #171316;
+    color: white;
+}
+
+body.dark .navbar {
+    background: #241c20;
+}
+
+body.dark .menu a {
+    color: white;
+}
+
+body.dark .card {
+    background: #2a2226;
+}
+
+body.dark .card p {
+    color: #ddd;
+}
+
+body.dark .page-title p:last-child,
+body.dark .intro > p {
+    color: #ddd;
+}
+
+/* RESPONSIVE */
+
+@media (max-width: 800px) {
+
+    .navbar {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .menu {
+        gap: 15px;
+    }
+
+    .hero h2 {
+        font-size: 40px;
+    }
+
+    .cards,
+    .cultural-cards,
+    .places {
+        grid-template-columns: 1fr;
+    }
+}
