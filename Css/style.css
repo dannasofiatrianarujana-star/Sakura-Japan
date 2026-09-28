@@ -514,4 +514,30 @@ body.dark .close-modal {
         height: 220px !important;
     }
 }
+.gallery-section {
+    max-width: 1200px !important;
+    margin: 20px auto 80px !important;
+    padding: 0 20px !important;
+    display: grid !important;
+    grid-template-columns: repeat(3, 1fr) !important;
+    gap: 25px !important;
+}
+
+.gallery-card {
+    width: 100% !important;
+    overflow: hidden;
+}
+
+.gallery-card img {
+    width: 100% !important;
+    height: 260px !important;
+    object-fit: cover !important;
+    display: block !important;
+}
+
+@media (max-width: 800px) {
+    .gallery-section {
+        grid-template-columns: 1fr !important;
+    }
+}
 
